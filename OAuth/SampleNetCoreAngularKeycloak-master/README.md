@@ -4,3 +4,7 @@ It is linked to an article I wrote on the subject.
 
 The base of the project is the default .Net Core 2.0 Angular template.
 
+First, install the Microsoft.AspNetCore.Authentication.JwtBearer Nuget package into the solution.
+
+    dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+
