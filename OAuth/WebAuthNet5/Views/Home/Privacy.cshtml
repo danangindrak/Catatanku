@@ -1,0 +1,56 @@
+﻿
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+<p>Available Claims </p>
+<br/>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    @foreach (var item in User.Claims.ToList())
+    {
+        <tr>
+            <td>@item.Type</td>
+            <td>@item.Value</td>
+        </tr>
+    }
+</table>
+
+
+
+<a id="xxend_session" href="/sign_off"  >Sign Out</a>
+@*<button id="end_session">Sign out</button>*@
+
+
+<script>
+    $(document).ready(function () {
+
+        $("#end_session").click(function () {
+            var uri = "http://34.101.73.38:8083/auth/realms/BPN/protocol/openid-connect/logout?redirect_uri=" + encodeURIComponent("http://localhost:3000/signin-keycloak");
+            $.ajax({
+                type: "POST",
+                url: uri,
+                contentType: "text/plain",
+                success: function (result, status, xhr) {
+                    alert("done");
+                },
+                error: function (error,xx,yy) {
+                    alert(error.statusText);
+                }
+            });
+        });
+
+
+
+    });
+   
+
+
+</script>

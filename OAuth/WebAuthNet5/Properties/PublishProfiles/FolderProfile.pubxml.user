@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\danan\Downloads\PUBLISH</_PublishTargetUrl>
+    <History>True|2022-02-17T09:29:19.4236136Z;False|2022-02-17T16:28:03.8200380+07:00;True|2022-02-14T20:20:04.1737488+07:00;True|2022-02-12T11:24:40.2636451+07:00;False|2022-02-12T11:23:40.1070015+07:00;False|2022-02-12T11:23:16.9374372+07:00;False|2022-02-12T11:22:08.8366509+07:00;False|2022-02-12T11:21:49.4288424+07:00;True|2022-02-12T10:49:33.7670374+07:00;</History>
+  </PropertyGroup>
+</Project>
